@@ -1,0 +1,8 @@
+title TDC ApoTestRex01 Test
+#sudo ifconfig lo0 alias 172.16.123.1 
+ssh -v \
+ -L172.16.123.1:3306:10.91.95.31:3306 \
+ -L172.16.123.1:4848:localhost:4848 \
+ -L172.16.123.1:8181:localhost:8181 \
+ apouser@213.174.92.107
+

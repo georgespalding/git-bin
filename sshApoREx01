@@ -1,0 +1,6 @@
+title TDC ApoRex PROD 01
+#sudo ifconfig lo0 alias 172.16.99.2 
+ssh -v -o CompressionLevel=9 -C \
+ -L172.16.99.1:3306:10.91.94.33:3306 \
+ -L172.16.99.1:4848:localhost:4848 \
+-v apouser@213.174.92.96

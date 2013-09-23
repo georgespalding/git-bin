@@ -1,0 +1,1 @@
+cat /tmp/pharmaconnect.ARTIKEL.KLS_20130218_215837.1361221117.txt |rabbitmqadmin -s -H localhost -P 15671 publish exchange=pharmaconnect.ARTIKEL routing_key=""

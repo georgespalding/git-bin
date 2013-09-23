@@ -1,0 +1,12 @@
+title TDC ApoApp01 PROD
+#sudo ifconfig lo0 alias 172.16.99.2 
+# Be careful: -L172.16.99.2:1433:172.30.150.12:1433 \
+ssh -v -o CompressionLevel=9 -C \
+ -L172.16.99.1:3306:10.91.94.33:3306 \
+ -L172.16.99.2:3306:localhost:3306 \
+ -L172.16.99.2:4848:localhost:4848 \
+ -L172.16.99.2:8181:localhost:8181 \
+ -L172.16.99.2:15672:localhost:15672 \
+ -L172.16.99.2:5672:localhost:5672 \
+ -L172.16.99.2:9090:localhost:9090 \
+Administrator@213.174.92.104

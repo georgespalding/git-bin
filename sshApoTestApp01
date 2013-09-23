@@ -1,0 +1,10 @@
+title TDC ApoTestApp01 Test
+#sudo ifconfig lo0 alias 172.16.123.2 
+ssh -o CompressionLevel=9 -C \
+ -L172.16.123.1:1433:10.91.95.41:1433 \
+ -L172.16.123.2:3306:localhost:3306 \
+ -L172.16.123.2:4848:localhost:4848 \
+ -L172.16.123.2:8181:localhost:8181 \
+ -L172.16.123.2:15672:localhost:15672 \
+ -L172.16.123.2:5672:localhost:5672 \
+cust-admin@213.174.92.111

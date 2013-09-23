@@ -1,0 +1,5 @@
+
+exch=$1
+
+cat $2|rabbitmqadmin -s -H localhost -P 15671 publish exchange=$exch routing_key=""
+echo Put file $2 on queue $1

@@ -1,0 +1,7 @@
+
+queue=$1
+now=`date "+%Y%m%d_%H%M%S.%s"`
+requeue=${2:-true}
+
+rabbitmqadmin -s -H localhost -P 15671 get queue=$queue requeue=${requeue} encoding=base64 payload_file=/tmp/${queue}_${now}.txt
+echo Saved message in /tmp/${queue}_${now}.txt

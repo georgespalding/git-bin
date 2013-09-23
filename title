@@ -1,0 +1,2 @@
+echo -n -e "\033]0;$*\007"
+osascript ~/bin/colorize_prod2.scpt

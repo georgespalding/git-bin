@@ -1,0 +1,1 @@
+rabbitmqadmin -s -H 54.246.162.204 -P 15671 get queue=pharmaconnect.LAGER.KLS requeue=true encoding=base64 payload_file=/tmp/data.txt

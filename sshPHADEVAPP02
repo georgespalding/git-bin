@@ -1,0 +1,9 @@
+# /etc/hosts lägg in 194.17.214.176 ext06-02.receptpartner.sjunet.org
+# sudo /sbin/route add -net 194.17.214.176 -interface utun0
+title PHAPDEV02 TDC Utv
+ssh -R1099:localhost:1099 \
+-L18686:localhost:8686 \
+-L13306:localhost:3306 \
+-L6672:10.91.21.21:5672 \
+-L25672:10.91.21.21:15672 \
+glassfish@213.174.89.133

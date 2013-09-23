@@ -1,0 +1,7 @@
+#!/usr/bin/perl
+my $secs=$ARGV[0];
+
+if(length($secs) > 10){
+   $secs=substr($secs,0,10);
+}
+print($secs,": ",scalar(localtime($secs)),"\n");

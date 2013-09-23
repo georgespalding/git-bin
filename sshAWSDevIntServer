@@ -1,0 +1,3 @@
+#        mysql db aws         mssql db server  rdp            db       
+ssh -o CompressionLevel=9 -C -v Admin@54.246.162.204
+

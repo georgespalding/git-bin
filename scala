@@ -1,0 +1,1 @@
+/Developer/typesafe-stack/bin/scala

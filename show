@@ -1,0 +1,16 @@
+#!/bin/sh
+
+the_script=`which $*`
+if [ -x ${the_script} ]
+then
+	echo Script ${the_script} is executable
+	the_type=`file ${the_script}`
+	case ${the_type} in
+	  	*text*)
+	  		cat ${the_script}
+	  	;;
+  		*) echo file ${the_script} of type ${the_type} is not save to cat
+	esac
+else
+	echo Script ${the_script} is not executable
+fi
